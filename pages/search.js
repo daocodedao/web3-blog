@@ -1,9 +1,4 @@
 import { useState, useEffect } from 'react'
-import { useRouter } from 'next/router'
-import { css } from '@emotion/css'
-import dynamic from 'next/dynamic'
-import { ethers } from 'ethers'
-
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client'
 
 // https://api.thegraph.com/subgraphs/name/daocodedao/blogcms
