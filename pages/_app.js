@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
         walletconnect: {
           package: WalletConnectProvider,
           options: { 
-            infuraId: process.env.INFURA_KEY
+            infuraId: process.env.NEXT_PUBLIC_INFURA_KEY
           },
         },
       },
@@ -90,7 +90,13 @@ function MyApp({ Component, pageProps }) {
               </Link>
             )
           }
+          <Link  legacyBehavior href="/search" >
+            <a className={link}>
+              Search
+            </a>
+          </Link>
         </div>
+        
       </nav>
       <div className={container}>
         <AccountContext.Provider value={account}>

@@ -12,7 +12,10 @@ import {
 import Blog from '../../artifacts/contracts/Blog.sol/Blog.json'
 
 const ipfsURI = 'https://ipfs.io/ipfs'
-const authInfura = process.env.INFURA_KEY + ':' + process.env.INFURA_SECRET
+console.log("NEXT_PUBLIC_INFURA_KEY:" + process.env.NEXT_PUBLIC_INFURA_KEY)
+console.log("NEXT_PUBLIC_INFURA_SECRET:" + process.env.NEXT_PUBLIC_INFURA_SECRET)
+
+const authInfura = process.env.NEXT_PUBLIC_INFURA_KEY + ':' + process.env.NEXT_PUBLIC_INFURA_SECRET
 const auth = 'Basic ' + Buffer.from(authInfura).toString('base64');
 console.log("authInfura:" + authInfura)
 

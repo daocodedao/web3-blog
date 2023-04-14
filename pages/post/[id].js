@@ -14,7 +14,7 @@ import Blog from '../../artifacts/contracts/Blog.sol/Blog.json'
 
 // const ipfsURI = 'https://ipfs.io/ipfs'
 
-const ipfsURI = process.env.INFURA_ACCESS_URI
+const ipfsURI = process.env.NEXT_PUBLIC_INFURA_ACCESS_URI
 
 export default function Post({ post }) {
   const account = useContext(AccountContext)

@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 import { css } from '@emotion/css'
 import { ethers } from 'ethers'
 import { create } from 'ipfs-http-client'
-
+// const ipfsClient = require('ipfs-http-client');
 /* import contract address and contract owner address */
 import {
   contractAddress
@@ -13,7 +13,10 @@ import {
 
 import Blog from '../artifacts/contracts/Blog.sol/Blog.json'
 
-const authInfura = process.env.INFURA_KEY + ':' + process.env.INFURA_SECRET
+console.log("NEXT_PUBLIC_INFURA_KEY:" + process.env.NEXT_PUBLIC_INFURA_KEY)
+console.log("NEXT_PUBLIC_INFURA_SECRET:" + process.env.NEXT_PUBLIC_INFURA_SECRET)
+console.log("NEXT_PUBLIC_ENVIRONMENT:" + process.env.NEXT_PUBLIC_ENVIRONMENT)
+const authInfura = process.env.NEXT_PUBLIC_INFURA_KEY + ':' + process.env.NEXT_PUBLIC_INFURA_SECRET
 const auth = 'Basic ' + Buffer.from(authInfura).toString('base64');
 console.log("authInfura:" + authInfura)
 
