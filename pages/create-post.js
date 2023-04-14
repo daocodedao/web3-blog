@@ -13,9 +13,9 @@ import {
 
 import Blog from '../artifacts/contracts/Blog.sol/Blog.json'
 
-const projectId = '2G4mwDCiaXiYVtlZlWZ4AYUsWFk';
-const projectSecret = 'c9ce06c011087e9dffabeb0d6dfbba51';
-const auth = 'Basic ' + Buffer.from(projectId + ':' + projectSecret).toString('base64');
+const authInfura = process.env.INFURA_KEY + ':' + process.env.INFURA_SECRET
+const auth = 'Basic ' + Buffer.from(authInfura).toString('base64');
+console.log("authInfura:" + authInfura)
 
 /* define the ipfs endpoint */
 const client = create({
@@ -26,7 +26,6 @@ const client = create({
       authorization: auth,
   },
 })
-
 
 
 /* configure the markdown editor to be client-side import */
