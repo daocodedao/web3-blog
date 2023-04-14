@@ -5,18 +5,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ### 介绍  
 web3-blog https://linzhji.blog.csdn.net/article/details/130125634
 
-### 钱包
-本地hardhat生成的公钥秘钥 
-Account #0: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 (10000 ETH)
-Private Key: 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
-
 
 ### infura
-
+```
 NEXT_PUBLIC_INFURA_KEY="xxxxx"
 NEXT_PUBLIC_INFURA_SECRET="xxxxx"
 NEXT_PUBLIC_INFURA_ACCESS_URI="xxxxx"
-
+```
 代码里这些xxx替换一下
 
 
